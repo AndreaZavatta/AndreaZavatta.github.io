@@ -10,9 +10,16 @@ export const Projects: React.FC = () => {
   const projects = DEFAULT_PROJECTS;
 
   // Derive unique filter tags from all projects
+  const EXCLUDED_FILTER_TAGS = new Set([
+    'Domain Modeling',
+    'Fullstack Web',
+    'Game Engine',
+    'Desktop GUI',
+  ]);
+
   const allTags = Array.from(
     new Set(projects.flatMap((p) => p.tags))
-  );
+  ).filter((tag) => !EXCLUDED_FILTER_TAGS.has(tag));
 
   const filteredProjects = projects.filter((p) => {
     const matchesTag =

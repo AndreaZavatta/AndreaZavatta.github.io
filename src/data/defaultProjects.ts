@@ -22,7 +22,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'Java',
     stars: 2,
     forks: 2,
-    tags: ['Java', 'OOP', 'Game Engine', 'Desktop GUI'],
+    tags: ['Java', 'OOP'],
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'Scala',
     stars: 0,
     forks: 1,
-    tags: ['Scala', 'Functional Programming', 'Simulation Engine', 'Domain Modeling'],
+    tags: ['Scala', 'Functional Programming', 'Simulation Engine'],
     featured: true,
   },
   {
@@ -46,7 +46,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'JavaScript',
     stars: 2,
     forks: 1,
-    tags: ['JavaScript', 'PHP', 'MySQL', 'Fullstack Web'],
+    tags: ['JavaScript', 'PHP', 'MySQL'],
     featured: true,
   },
 ];
