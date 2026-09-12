@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
             {/* Narrative */}
             <div className="space-y-4 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
               <p className="text-base sm:text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                Hi 👋, I'm a Software Engineer from Italy striving to build impactful projects that I can genuinely be proud of—often connecting software engineering with my personal passions, such as sports and hobbies like chess.
+                Hi 👋, I'm a Software Engineer from Italy striving to build impactful projects, often connecting software engineering with my personal passions, such as sports and hobbies like chess.
               </p>
               <p>
                 My greatest technical strengths lie in <span className="text-zinc-900 dark:text-zinc-200 font-medium">Java</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Scala</span>, honed throughout my university path and software projects. I enjoy designing clean, robust software across both <span className="text-zinc-900 dark:text-zinc-200 font-medium">Object-Oriented</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Functional programming</span> paradigms, with a strong interest in understanding distributed systems and how large-scale architectures scale.
