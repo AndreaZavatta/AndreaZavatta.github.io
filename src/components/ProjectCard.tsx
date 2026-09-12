@@ -1,7 +1,6 @@
 import React from 'react';
-import { ExternalLink, Star, GitFork, FolderGit2 } from 'lucide-react';
+import { Star, GitFork, FolderGit2 } from 'lucide-react';
 import type { Project } from '../types';
-import { GitHubIcon } from './Icons';
 
 interface ProjectCardProps {
   project: Project;
@@ -90,42 +89,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           )}
         </div>
 
-        {/* Action Links */}
+        {/* Card Footer */}
         <div className="flex items-center justify-between pt-3 border-t border-zinc-800/60 text-xs">
           {/* Primary Language */}
           <div className="flex items-center gap-1.5 text-zinc-400 font-medium">
             <span className={`w-2 h-2 rounded-full ${languageColor}`}></span>
             <span>{project.language}</span>
-          </div>
-
-          {/* External Links */}
-          <div className="flex items-center gap-3">
-            {project.demoUrl && (
-              <span
-                role="button"
-                tabIndex={0}
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  window.open(project.demoUrl, '_blank', 'noreferrer');
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    window.open(project.demoUrl, '_blank', 'noreferrer');
-                  }
-                }}
-                className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-medium transition-colors cursor-pointer z-10"
-              >
-                <span>Live Demo</span>
-                <ExternalLink className="w-3 h-3" />
-              </span>
-            )}
-            <div className="flex items-center gap-1 text-zinc-400 group-hover:text-white font-medium transition-colors">
-              <GitHubIcon className="w-3.5 h-3.5" />
-              <span>GitHub</span>
-            </div>
           </div>
         </div>
       </div>

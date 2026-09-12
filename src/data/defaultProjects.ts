@@ -30,7 +30,6 @@ export const DEFAULT_PROJECTS: Project[] = [
     name: 'PlagueSim',
     owner: 'PlagueSim',
     repoUrl: 'https://github.com/PlagueSim/pps-24-psim',
-    demoUrl: 'https://plaguesim.github.io/pps-24-psim/',
     description: 'Simulation strategy game inspired by Plague Inc., modeling disease transmission dynamics across interconnected global regions with functional and OOP paradigms in Scala.',
     language: 'Scala',
     stars: 0,
