@@ -19,15 +19,20 @@ export const Hero: React.FC = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
                 Andrea Zavatta
               </h1>
-              <p className="mt-3 text-lg sm:text-xl text-zinc-400 font-medium leading-relaxed">
-                Software Engineer passionate about backend systems, distributed architectures, and collaborative web tools.
+              <p className="mt-3 text-lg sm:text-xl text-zinc-300 font-medium leading-relaxed">
+                Software Engineer passionate about backend systems, distributed architectures, and large-scale computing.
               </p>
             </div>
 
-            {/* Short narrative */}
-            <p className="text-sm sm:text-base text-zinc-400/90 leading-relaxed">
-              With a solid foundation in Object-Oriented design, modern TypeScript, and cloud-native services, I focus on building reliable software with clean architectures and great developer ergonomics.
-            </p>
+            {/* Narrative */}
+            <div className="space-y-3 text-sm sm:text-base text-zinc-400 leading-relaxed">
+              <p>
+                I specialize in backend engineering, primarily working with <span className="text-zinc-200 font-medium">Java</span> and <span className="text-zinc-200 font-medium">Scala</span>. At university, I dive deep into distributed systems, exploring how to scale backend architectures capable of handling massive workloads and millions of concurrent users, blending both <span className="text-zinc-200 font-medium">Object-Oriented</span> and <span className="text-zinc-200 font-medium">Functional programming</span> paradigms.
+              </p>
+              <p>
+                I strive to build impactful projects that I can genuinely be proud of—often bridging software engineering with my personal passions, such as sports and hobbies like chess.
+              </p>
+            </div>
 
             {/* Location */}
             <div className="flex items-center gap-1.5 text-xs text-zinc-500 pt-1">

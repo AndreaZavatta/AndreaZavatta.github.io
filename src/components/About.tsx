@@ -1,31 +1,31 @@
 import React from 'react';
-import { Code2, Server, Cpu, Layers } from 'lucide-react';
+import { Code2, Server, Cpu, GitBranch } from 'lucide-react';
 
 export const About: React.FC = () => {
   const pillars = [
     {
-      icon: <Code2 className="w-5 h-5 text-emerald-400" />,
-      title: 'Object-Oriented & Type-Safe Architecture',
-      description:
-        'Deep understanding of clean design patterns, SOLID principles, domain modeling, and strict type safety across Java and TypeScript.',
-    },
-    {
       icon: <Server className="w-5 h-5 text-blue-400" />,
-      title: 'Backend & Distributed Services',
+      title: 'Distributed Systems & Scalable Backends',
       description:
-        'Experienced in architecting real-time WebSockets, microservices with Redis and MongoDB, asynchronous queues, and REST APIs.',
+        'Studying distributed consensus, replication, concurrent computation, and backend scalability designed to handle millions of concurrent users.',
     },
     {
-      icon: <Layers className="w-5 h-5 text-indigo-400" />,
-      title: 'Modern Fullstack Ecosystems',
+      icon: <Code2 className="w-5 h-5 text-emerald-400" />,
+      title: 'Object-Oriented & Functional Paradigms',
       description:
-        'Building responsive, fast, and accessible user interfaces with Vue, React, Tailwind CSS, coupled with robust server runtimes.',
+        'Blending clean OOP principles, domain-driven design, and strict type safety in Java with pure functional paradigms and immutability in Scala.',
+    },
+    {
+      icon: <GitBranch className="w-5 h-5 text-indigo-400" />,
+      title: 'Impactful & Domain-Driven Projects',
+      description:
+        'Channeling engineering into personal passions—from game engines and simulation dynamics (PlagueSim, OOP21-Chess) to real-time microservices.',
     },
     {
       icon: <Cpu className="w-5 h-5 text-amber-400" />,
-      title: 'DevOps & Containerization',
+      title: 'Containerization & DevOps',
       description:
-        'Deploying scalable environments with Docker, reverse proxies (Traefik), CI/CD pipelines, and automated GitHub workflows.',
+        'Deploying resilient containerized architectures with Docker, reverse proxies (Traefik), Redis caching, and automated CI/CD pipelines.',
     },
   ];
 
@@ -37,13 +37,13 @@ export const About: React.FC = () => {
             Background &amp; Philosophy
           </span>
           <h2 className="text-3xl font-bold tracking-tight text-white">
-            Engineering for reliability, clarity, and scale.
+            Engineering for scale, resilience, and personal pride.
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            I am a Software Engineer dedicated to crafting maintainable and robust systems. Whether it is engineering complex state management in multiplayer real-time applications like <strong className="text-zinc-200">Pixie</strong> or modeling strict rule verification engines in <strong className="text-zinc-200">OOP21-Chess</strong>, I prioritize clean architectural boundaries and code clarity.
+            I am a Software Engineer dedicated to crafting maintainable and robust backend systems. Whether it is modeling strict rule verification engines in <strong className="text-zinc-200">OOP21-Chess</strong>, engineering infectious simulation dynamics in <strong className="text-zinc-200">PlagueSim</strong> with Scala, or handling real-time microservices in <strong className="text-zinc-200">Pixie</strong>, I prioritize clean architectural boundaries and scalable computation.
           </p>
           <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            I believe that great software is born out of continuous learning, open-source collaboration, and rigorous attention to developer ergonomics and system performance.
+            I believe that great software is born at the intersection of rigorous distributed engineering and personal passion—building resilient systems that perform under massive scale and create a real, proud impact.
           </p>
         </div>
 
