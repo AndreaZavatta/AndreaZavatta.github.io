@@ -10,7 +10,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'TypeScript',
     stars: 4,
     forks: 1,
-    tags: ['TypeScript', 'Vue 3', 'Socket.IO', 'Node.js', 'Redis', 'MongoDB', 'Docker', 'Traefik'],
+    tags: ['TypeScript', 'WebSockets', 'Redis', 'Docker'],
     featured: true,
   },
   {
@@ -22,7 +22,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'Java',
     stars: 2,
     forks: 2,
-    tags: ['Java', 'OOP', 'Desktop GUI', 'Software Architecture'],
+    tags: ['Java', 'OOP', 'Game Engine', 'Desktop GUI'],
     featured: true,
   },
   {
@@ -46,7 +46,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     language: 'JavaScript',
     stars: 2,
     forks: 1,
-    tags: ['JavaScript', 'PHP', 'MySQL', 'Fullstack Web', 'Social Network'],
+    tags: ['JavaScript', 'PHP', 'MySQL', 'Fullstack Web'],
     featured: true,
   },
 ];

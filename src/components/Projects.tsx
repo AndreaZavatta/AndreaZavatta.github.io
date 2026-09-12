@@ -9,10 +9,10 @@ export const Projects: React.FC = () => {
 
   const projects = DEFAULT_PROJECTS;
 
-  // Derive unique filter tags
+  // Derive unique filter tags from all projects
   const allTags = Array.from(
     new Set(projects.flatMap((p) => p.tags))
-  ).slice(0, 8);
+  );
 
   const filteredProjects = projects.filter((p) => {
     const matchesTag =
@@ -48,9 +48,9 @@ export const Projects: React.FC = () => {
         </div>
 
         {/* Filter and Search Bar */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
           {/* Tags */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+          <div className="flex flex-wrap items-center gap-1.5 flex-1">
             <button
               onClick={() => setSelectedTag('All')}
               className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors shrink-0 cursor-pointer ${
