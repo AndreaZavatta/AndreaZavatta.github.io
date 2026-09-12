@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Mail, Sparkles, MapPin } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
 import profileImage from '../assets/profileImage.jpeg';
 
@@ -14,15 +14,6 @@ export const Hero: React.FC = () => {
           
           {/* Main Info */}
           <div className="space-y-6 max-w-2xl">
-            {/* Status Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-xs text-zinc-300">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span>Open to Software Engineering Opportunities</span>
-            </div>
-
             {/* Title & Tagline */}
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
@@ -38,16 +29,10 @@ export const Hero: React.FC = () => {
               With a solid foundation in Object-Oriented design, modern TypeScript, and cloud-native services, I focus on building reliable software with clean architectures and great developer ergonomics.
             </p>
 
-            {/* Location & Quick Meta */}
-            <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-500 pt-1">
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-zinc-400" />
-                Italy / Remote
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                Specialized in Java &amp; TypeScript Ecosystems
-              </span>
+            {/* Location */}
+            <div className="flex items-center gap-1.5 text-xs text-zinc-500 pt-1">
+              <MapPin className="w-3.5 h-3.5 text-zinc-400" />
+              <span>Italy</span>
             </div>
 
             {/* Action Buttons */}
