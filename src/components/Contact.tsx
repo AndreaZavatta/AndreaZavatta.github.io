@@ -30,7 +30,7 @@ export const Contact: React.FC = () => {
             </h2>
 
             <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
-              I am open to Software Engineering opportunities, backend &amp; fullstack challenges, and interesting open-source initiatives. Feel free to reach out directly.
+              If you have a project that might interest me (open source or closed source), feel free to contact me.
             </p>
 
             {/* Email Action Box */}
