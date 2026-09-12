@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, GraduationCap, Calendar, ArrowUpRight } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
 
 export const Experience: React.FC = () => {
   const experiences = [
@@ -157,22 +157,6 @@ export const Experience: React.FC = () => {
                   </p>
                 </div>
               ))}
-
-              {/* LinkedIn Full Resume Callout */}
-              <div className="p-5 rounded-xl bg-zinc-900/30 border border-dashed border-zinc-800 text-xs text-zinc-400 space-y-3">
-                <p>
-                  Looking for detailed employment history, certifications, or recommendations?
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/andreazavatta/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
-                >
-                  <span>View Complete LinkedIn Profile</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
