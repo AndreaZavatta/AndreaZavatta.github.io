@@ -8,11 +8,9 @@ export const Experience: React.FC = () => {
       role: 'Software Engineer',
       company: 'Technogym · Integration & Digital Enablement',
       description: [
-        'Took full end-to-end project ownership, engineering intelligent agent solutions with Python and Microsoft 365 Agents ecosystem.',
-        'Architected a custom conversational agent integrated within Microsoft Teams capable of natural language Q&A, automated tool execution, and proactive reminders.',
-        'Designed and selected scalable cloud infrastructure, implementing robust CI/CD delivery pipelines for continuous deployment.',
-        'Established comprehensive production logging, error diagnostics, and observability to monitor performance and resolve runtime anomalies.',
-        'Translated complex stakeholder and customer requirements into modular, testable, and maintainable software, while providing ongoing development for targeted Salesforce features.',
+        'Took end-to-end ownership of intelligent agent development using Python and Microsoft 365 Agents, building a custom Microsoft Teams bot for interactive Q&A, autonomous tool execution, and proactive reminders.',
+        'Architected scalable cloud deployments with automated CI/CD pipelines, implementing structured logging, error diagnostics, and observability for production stability.',
+        'Translated customer and stakeholder needs into modular, testable code designed to scale, while continuing parallel development on targeted Salesforce platform features.',
       ],
       skills: [
         'Python',
@@ -28,13 +26,11 @@ export const Experience: React.FC = () => {
     {
       period: 'January 2024 — September 2025',
       role: 'Digital Customer Platform Application Analyst (Salesforce Developer)',
-      company: 'Technogym · Digital Customer Platform',
+      company: 'Technogym · Information Technology',
       description: [
-        'Worked as a Salesforce Developer & Application Analyst, mastering platform architecture from both development and administration perspectives.',
-        'Engineered custom solutions and interactive interfaces using Apex, SOQL, Lightning Web Components (LWC), and Visualforce pages.',
-        'Optimized code, database queries, and transaction processing to strictly adhere to Salesforce governor limits and multi-tenant performance standards.',
-        'Transformed complex business requirements into modular, testable, and maintainable code engineered for future scalability and evolving needs.',
-        'Ensured software quality with comprehensive automated unit testing, CI/CD deployment pipelines, and agile sprint collaboration via Jira.',
+        'Engineered enterprise Salesforce solutions and custom user interfaces using Apex, SOQL, Lightning Web Components (LWC), and Visualforce pages.',
+        'Optimized code execution and data queries to strictly adhere to Salesforce governor limits, designing modular and testable code structured for future business evolution.',
+        'Ensured platform reliability and code quality through comprehensive automated unit testing, CI/CD deployment workflows, and agile sprint delivery via Jira.',
       ],
       skills: [
         'Salesforce',
