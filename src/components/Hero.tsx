@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Mail, Sparkles, MapPin } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
+import profileImage from '../assets/profileImage.jpeg';
 
 export const Hero: React.FC = () => {
   return (
@@ -82,9 +83,9 @@ export const Hero: React.FC = () => {
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500/20 to-indigo-500/20 blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
             <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl">
               <img
-                src="https://avatars.githubusercontent.com/u/77069789?v=4"
+                src={profileImage}
                 alt="Andrea Zavatta"
-                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
