@@ -49,10 +49,16 @@ export const Experience: React.FC = () => {
 
   const education = [
     {
-      period: 'University Education',
-      degree: 'Computer Science and Engineering',
-      institution: 'Alma Mater Studiorum – Università di Bologna',
-      details: 'Focused on Algorithms, Software Architecture, Distributed Systems, Networking, and Databases.',
+      period: 'Sep 2024 — Present',
+      degree: "Master's Degree, Engineering and Computer Science",
+      institution: 'Alma Mater Studiorum – University of Bologna',
+      details: 'Focused on Distributed Systems, Backend Scalability, and Advanced Software Architectures.',
+    },
+    {
+      period: 'Sep 2020 — Sep 2024',
+      degree: "Bachelor's Degree, Engineering and Computer Science",
+      institution: 'Alma Mater Studiorum – University of Bologna',
+      details: 'Focused on Algorithms, Object-Oriented Paradigms, Computer Networks, and Operating Systems.',
     },
   ];
 
