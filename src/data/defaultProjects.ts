@@ -38,4 +38,16 @@ export const DEFAULT_PROJECTS: Project[] = [
     tags: ['Scala', 'Functional Programming', 'Simulation Engine', 'Domain Modeling'],
     featured: true,
   },
+  {
+    id: 'giacomosirri/Snippex',
+    name: 'Snippex',
+    owner: 'giacomosirri',
+    repoUrl: 'https://github.com/giacomosirri/Snippex',
+    description: 'Social networking web platform designed for sharing and categorizing creative thoughts, featuring interactive user ratings, sentiment categories, and relational database persistence.',
+    language: 'JavaScript',
+    stars: 2,
+    forks: 1,
+    tags: ['JavaScript', 'PHP', 'MySQL', 'Fullstack Web', 'Social Network'],
+    featured: true,
+  },
 ];

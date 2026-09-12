@@ -17,6 +17,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   Go: 'bg-cyan-400',
   Rust: 'bg-amber-600',
   Scala: 'bg-red-500',
+  PHP: 'bg-indigo-400',
   HTML: 'bg-red-500',
   Vue: 'bg-emerald-500',
 };
