@@ -30,17 +30,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       target="_blank"
       rel="noreferrer"
       aria-label={`View ${project.name} on GitHub`}
-      className="group relative flex flex-col justify-between p-6 rounded-2xl bg-zinc-900/70 border border-zinc-800/80 hover:border-zinc-600/80 hover:bg-zinc-900/90 hover:scale-[1.025] hover:-translate-y-1 active:scale-[0.99] transition-all duration-300 ease-out shadow-sm hover:shadow-2xl hover:shadow-black/60 cursor-pointer block text-left"
+      className="group relative flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-zinc-900/70 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-600/80 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/90 hover:scale-[1.025] hover:-translate-y-1 active:scale-[0.99] transition-all duration-300 ease-out shadow-xs hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-black/60 cursor-pointer block text-left"
     >
       <div>
         {/* Card Header: Icon, Name, Stats */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-zinc-800/70 border border-zinc-700/50 text-zinc-300 group-hover:text-emerald-400 group-hover:border-emerald-500/40 transition-colors">
+            <div className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800/70 border border-zinc-200 dark:border-zinc-700/50 text-zinc-600 dark:text-zinc-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:border-emerald-500/40 transition-colors">
               <FolderGit2 className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-semibold text-zinc-100 text-lg group-hover:text-white group-hover:underline decoration-zinc-500 underline-offset-4 tracking-tight flex items-center gap-2 transition-colors">
+              <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 text-lg group-hover:text-emerald-600 dark:group-hover:text-white group-hover:underline decoration-zinc-400 dark:decoration-zinc-500 underline-offset-4 tracking-tight flex items-center gap-2 transition-colors">
                 {project.name}
               </h3>
               {project.owner && (
@@ -52,20 +52,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
 
           {/* Top-Right Stats Badges */}
-          <div className="flex items-center gap-2.5 text-xs text-zinc-400 bg-zinc-950/70 px-2.5 py-1 rounded-full border border-zinc-800">
+          <div className="flex items-center gap-2.5 text-xs text-zinc-600 dark:text-zinc-400 bg-zinc-100/80 dark:bg-zinc-950/70 px-2.5 py-1 rounded-full border border-zinc-200 dark:border-zinc-800">
             <span className="flex items-center gap-1">
-              <Star className="w-3 h-3 text-amber-400 fill-amber-400/20" />
+              <Star className="w-3 h-3 text-amber-500 dark:text-amber-400 fill-amber-400/20" />
               {project.stars}
             </span>
             <span className="flex items-center gap-1">
-              <GitFork className="w-3 h-3 text-zinc-400" />
+              <GitFork className="w-3 h-3 text-zinc-500 dark:text-zinc-400" />
               {project.forks}
             </span>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3 mb-5 mt-2 group-hover:text-zinc-300 transition-colors">
+        <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-3 mb-5 mt-2 group-hover:text-zinc-800 dark:group-hover:text-zinc-300 transition-colors">
           {project.description}
         </p>
       </div>
@@ -77,22 +77,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.slice(0, 5).map((tag) => (
             <span
               key={tag}
-              className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40 group-hover:border-zinc-600 transition-colors"
+              className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/40 group-hover:border-zinc-300 dark:group-hover:border-zinc-600 transition-colors"
             >
               {tag}
             </span>
           ))}
           {project.tags.length > 5 && (
-            <span className="text-[11px] font-medium px-1.5 py-0.5 rounded-md bg-zinc-800/40 text-zinc-500">
+            <span className="text-[11px] font-medium px-1.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/40 text-zinc-500">
               +{project.tags.length - 5}
             </span>
           )}
         </div>
 
         {/* Card Footer */}
-        <div className="flex items-center justify-between pt-3 border-t border-zinc-800/60 text-xs">
+        <div className="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800/60 text-xs">
           {/* Primary Language */}
-          <div className="flex items-center gap-1.5 text-zinc-400 font-medium">
+          <div className="flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400 font-medium">
             <span className={`w-2 h-2 rounded-full ${languageColor}`}></span>
             <span>{project.language}</span>
           </div>

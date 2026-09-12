@@ -37,19 +37,19 @@ export const Projects: React.FC = () => {
   });
 
   return (
-    <section id="projects" className="py-20 border-t border-zinc-800/80 scroll-mt-16">
+    <section id="projects" className="py-20 border-t border-zinc-200 dark:border-zinc-800/80 scroll-mt-16">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="mb-10">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-2">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Portfolio Showcase</span>
           </div>
-          <h2 className="text-3xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">
             Featured Projects
           </h2>
-          <p className="text-zinc-400 text-sm mt-1 max-w-xl">
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm mt-1 max-w-xl">
             A collection of software engineering systems, open-source work, and distributed applications.
           </p>
         </div>
@@ -62,8 +62,8 @@ export const Projects: React.FC = () => {
               onClick={() => setSelectedTag('All')}
               className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors shrink-0 cursor-pointer ${
                 selectedTag === 'All'
-                  ? 'bg-zinc-100 text-zinc-950 font-semibold'
-                  : 'bg-zinc-900/90 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
+                  ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950 font-semibold shadow-xs'
+                  : 'bg-white dark:bg-zinc-900/90 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-xs'
               }`}
             >
               All ({projects.length})
@@ -74,8 +74,8 @@ export const Projects: React.FC = () => {
                 onClick={() => setSelectedTag(tag)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors shrink-0 cursor-pointer ${
                   selectedTag === tag
-                    ? 'bg-zinc-100 text-zinc-950 font-semibold'
-                    : 'bg-zinc-900/90 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
+                    ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950 font-semibold shadow-xs'
+                    : 'bg-white dark:bg-zinc-900/90 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-xs'
                 }`}
               >
                 {tag}
@@ -85,13 +85,13 @@ export const Projects: React.FC = () => {
 
           {/* Search Input */}
           <div className="relative min-w-[220px]">
-            <Search className="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <Search className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search projects..."
-              className="w-full pl-8 pr-3 py-1.5 bg-zinc-900/80 border border-zinc-800 rounded-lg text-xs text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-zinc-700"
+              className="w-full pl-8 pr-3 py-1.5 bg-white dark:bg-zinc-900/80 border border-zinc-200 dark:border-zinc-800 rounded-lg text-xs text-zinc-900 dark:text-zinc-200 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-700 shadow-xs"
             />
           </div>
         </div>
@@ -107,14 +107,14 @@ export const Projects: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="py-14 text-center border border-dashed border-zinc-800 rounded-2xl bg-zinc-900/20">
-            <p className="text-zinc-400 text-sm">No projects matched your criteria.</p>
+          <div className="py-14 text-center border border-dashed border-zinc-200 dark:border-zinc-800 rounded-2xl bg-zinc-100/50 dark:bg-zinc-900/20">
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm">No projects matched your criteria.</p>
             <button
               onClick={() => {
                 setSelectedTag('All');
                 setSearchQuery('');
               }}
-              className="mt-3 text-xs text-emerald-400 hover:underline font-medium cursor-pointer"
+              className="mt-3 text-xs text-emerald-600 dark:text-emerald-400 hover:underline font-medium cursor-pointer"
             >
               Clear filters
             </button>

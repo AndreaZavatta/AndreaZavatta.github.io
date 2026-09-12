@@ -63,18 +63,18 @@ export const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 border-t border-zinc-800/80 scroll-mt-16">
+    <section id="experience" className="py-20 border-t border-zinc-200 dark:border-zinc-800/80 scroll-mt-16">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="mb-12">
-          <span className="text-xs font-semibold text-emerald-400 uppercase tracking-widest">
+          <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">
             Career &amp; Background
           </span>
-          <h2 className="text-3xl font-bold tracking-tight text-white mt-1">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white mt-1">
             Experience &amp; Education
           </h2>
-          <p className="text-zinc-400 text-sm mt-1">
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm mt-1">
             Summary of professional experience and academic background.
           </p>
         </div>
@@ -82,19 +82,19 @@ export const Experience: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Work / Engineering Experience Timeline (2 columns) */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="flex items-center gap-2 text-sm font-semibold text-zinc-200">
-              <Briefcase className="w-4 h-4 text-emerald-400" />
+            <div className="flex items-center gap-2 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+              <Briefcase className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
               <span>Work Experience</span>
             </div>
 
-            <div className="relative pl-6 border-l border-zinc-800 space-y-8">
+            <div className="relative pl-6 border-l border-zinc-200 dark:border-zinc-800 space-y-8">
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative group">
                   {/* Timeline dot */}
-                  <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-zinc-900 border-2 border-emerald-400 group-hover:bg-emerald-400 transition-colors" />
+                  <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-white dark:bg-zinc-900 border-2 border-emerald-500 dark:border-emerald-400 group-hover:bg-emerald-500 dark:group-hover:bg-emerald-400 transition-colors" />
 
                   <div className="flex flex-wrap items-center justify-between gap-1 mb-1">
-                    <h3 className="text-base font-semibold text-white">
+                    <h3 className="text-base font-semibold text-zinc-900 dark:text-white">
                       {exp.role}
                     </h3>
                     <span className="text-xs text-zinc-500 font-mono flex items-center gap-1">
@@ -103,11 +103,11 @@ export const Experience: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="text-xs font-medium text-emerald-400 mb-3">
+                  <div className="text-xs font-medium text-emerald-600 dark:text-emerald-400 mb-3">
                     {exp.company}
                   </div>
 
-                  <ul className="space-y-1.5 text-xs sm:text-sm text-zinc-400 mb-4 list-disc list-inside">
+                  <ul className="space-y-1.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4 list-disc list-inside">
                     {exp.description.map((item, i) => (
                       <li key={i} className="leading-relaxed">
                         {item}
@@ -119,7 +119,7 @@ export const Experience: React.FC = () => {
                     {exp.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="text-[11px] px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800"
+                        className="text-[11px] px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-800"
                       >
                         {skill}
                       </span>
@@ -132,8 +132,8 @@ export const Experience: React.FC = () => {
 
           {/* Education & Credentials (1 column) */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2 text-sm font-semibold text-zinc-200">
-              <GraduationCap className="w-4 h-4 text-blue-400" />
+            <div className="flex items-center gap-2 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+              <GraduationCap className="w-4 h-4 text-blue-500 dark:text-blue-400" />
               <span>Education</span>
             </div>
 
@@ -141,18 +141,18 @@ export const Experience: React.FC = () => {
               {education.map((edu, idx) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-xl bg-zinc-900/60 border border-zinc-800/70 space-y-2"
+                  className="p-5 rounded-xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800/70 space-y-2 shadow-xs"
                 >
                   <span className="text-xs text-zinc-500 font-mono block">
                     {edu.period}
                   </span>
-                  <h4 className="text-sm font-semibold text-white">
+                  <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">
                     {edu.degree}
                   </h4>
-                  <div className="text-xs text-zinc-300">
+                  <div className="text-xs text-zinc-700 dark:text-zinc-300">
                     {edu.institution}
                   </div>
-                  <p className="text-xs text-zinc-400 leading-relaxed pt-1">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed pt-1">
                     {edu.details}
                   </p>
                 </div>
