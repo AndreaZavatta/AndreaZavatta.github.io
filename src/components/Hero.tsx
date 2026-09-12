@@ -90,26 +90,6 @@ export const Hero: React.FC = () => {
           </div>
 
         </div>
-
-        {/* Quick Highlights Counter Bar */}
-        <div className="mt-14 pt-8 border-t border-zinc-800/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
-          <div>
-            <div className="text-2xl font-bold text-white tracking-tight">45+</div>
-            <div className="text-xs text-zinc-500 mt-0.5 font-medium">Public Repositories</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold text-white tracking-tight">Java &amp; TS</div>
-            <div className="text-xs text-zinc-500 mt-0.5 font-medium">Primary Tech Stack</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold text-white tracking-tight">Real-Time</div>
-            <div className="text-xs text-zinc-500 mt-0.5 font-medium">WebSockets &amp; Scaling</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold text-white tracking-tight">Open Source</div>
-            <div className="text-xs text-zinc-500 mt-0.5 font-medium">Community &amp; Sharing</div>
-          </div>
-        </div>
       </div>
     </section>
   );
