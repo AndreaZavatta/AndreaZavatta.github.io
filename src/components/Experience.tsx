@@ -4,9 +4,31 @@ import { Briefcase, GraduationCap, Calendar, ArrowUpRight } from 'lucide-react';
 export const Experience: React.FC = () => {
   const experiences = [
     {
+      period: 'September 2025 — Present',
+      role: 'Software Engineer',
+      company: 'Technogym · Integration & Digital Enablement',
+      description: [
+        'Took full end-to-end project ownership, engineering intelligent agent solutions with Python and Microsoft 365 Agents ecosystem.',
+        'Architected a custom conversational agent integrated within Microsoft Teams capable of natural language Q&A, automated tool execution, and proactive reminders.',
+        'Designed and selected scalable cloud infrastructure, implementing robust CI/CD delivery pipelines for continuous deployment.',
+        'Established comprehensive production logging, error diagnostics, and observability to monitor performance and resolve runtime anomalies.',
+        'Translated complex stakeholder and customer requirements into modular, testable, and maintainable software, while providing ongoing development for targeted Salesforce features.',
+      ],
+      skills: [
+        'Python',
+        'Microsoft 365 Agents',
+        'Microsoft Teams',
+        'Cloud Deployment',
+        'CI/CD Pipelines',
+        'Production Logging',
+        'Scalable Architecture',
+        'Salesforce',
+      ],
+    },
+    {
       period: 'January 2024 — September 2025',
       role: 'Digital Customer Platform Application Analyst (Salesforce Developer)',
-      company: 'Technogym',
+      company: 'Technogym · Digital Customer Platform',
       description: [
         'Worked as a Salesforce Developer & Application Analyst, mastering platform architecture from both development and administration perspectives.',
         'Engineered custom solutions and interactive interfaces using Apex, SOQL, Lightning Web Components (LWC), and Visualforce pages.',
