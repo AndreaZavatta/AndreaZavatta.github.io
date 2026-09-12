@@ -25,7 +25,7 @@ export const Experience: React.FC = () => {
     },
     {
       period: 'January 2024 — September 2025',
-      role: 'Digital Customer Platform Application Analyst (Salesforce Developer)',
+      role: 'Salesforce Developer',
       company: 'Technogym · Information Technology',
       description: [
         'Engineered enterprise Salesforce solutions and custom user interfaces using Apex, SOQL, Lightning Web Components (LWC), and Visualforce pages.',
