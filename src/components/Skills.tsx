@@ -1,0 +1,99 @@
+import React from 'react';
+import { Terminal, Database, Globe, Wrench } from 'lucide-react';
+
+export const Skills: React.FC = () => {
+  const categories = [
+    {
+      name: 'Programming Languages',
+      icon: <Terminal className="w-4 h-4 text-emerald-400" />,
+      skills: ['Java', 'Scala', 'TypeScript', 'JavaScript', 'C++', 'C#', 'Python', 'SQL'],
+    },
+    {
+      name: 'Backend & Distributed Systems',
+      icon: <Database className="w-4 h-4 text-blue-400" />,
+      skills: [
+        'Node.js',
+        'Express',
+        'WebSockets / Socket.IO',
+        'Redis (Pub/Sub & Caching)',
+        'MongoDB',
+        'RESTful API Design',
+        'Microservices Architecture',
+      ],
+    },
+    {
+      name: 'Frontend & UI Engineering',
+      icon: <Globe className="w-4 h-4 text-purple-400" />,
+      skills: [
+        'Vue.js 3',
+        'React',
+        'Tailwind CSS',
+        'Pinia',
+        'Vite',
+        'HTML5 / Semantic Web',
+        'Responsive Design',
+      ],
+    },
+    {
+      name: 'DevOps & Development Tools',
+      icon: <Wrench className="w-4 h-4 text-amber-400" />,
+      skills: [
+        'Docker & Docker Compose',
+        'Git & GitHub Actions',
+        'Traefik Proxy',
+        'Linux / Bash',
+        'OOP Architecture Patterns',
+        'Testing & Code Quality',
+      ],
+    },
+  ];
+
+  return (
+    <section id="skills" className="py-20 border-t border-zinc-800/80 scroll-mt-16">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Header */}
+        <div className="mb-12">
+          <span className="text-xs font-semibold text-emerald-400 uppercase tracking-widest">
+            Technical Competencies
+          </span>
+          <h2 className="text-3xl font-bold tracking-tight text-white mt-1">
+            Skills &amp; Technologies
+          </h2>
+          <p className="text-zinc-400 text-sm mt-1">
+            Core toolset and technologies I work with across systems and web applications.
+          </p>
+        </div>
+
+        {/* Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {categories.map((cat, idx) => (
+            <div
+              key={idx}
+              className="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700/80 transition-all space-y-4"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="p-2 rounded-lg bg-zinc-800/80 border border-zinc-700/60">
+                  {cat.icon}
+                </div>
+                <h3 className="font-semibold text-zinc-100 text-sm sm:text-base">
+                  {cat.name}
+                </h3>
+              </div>
+
+              <div className="flex flex-wrap gap-2 pt-1">
+                {cat.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 text-xs font-medium bg-zinc-950 text-zinc-300 rounded-lg border border-zinc-800 hover:border-zinc-600 hover:text-white transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};

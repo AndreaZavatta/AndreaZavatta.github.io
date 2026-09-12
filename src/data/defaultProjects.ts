@@ -1,0 +1,41 @@
+import type { Project } from '../types';
+
+export const DEFAULT_PROJECTS: Project[] = [
+  {
+    id: 'pixie-git/pixie',
+    name: 'Pixie',
+    owner: 'pixie-git',
+    repoUrl: 'https://github.com/pixie-git/pixie',
+    description: 'Real-time collaborative pixel art editor. Multi-user shared canvas rooms powered by WebSockets, containerized microservices, and dynamic load balancing.',
+    language: 'TypeScript',
+    stars: 4,
+    forks: 1,
+    tags: ['TypeScript', 'Vue 3', 'Socket.IO', 'Node.js', 'Redis', 'MongoDB', 'Docker', 'Traefik'],
+    featured: true,
+  },
+  {
+    id: 'AndreaZavatta/OOP21-Chess',
+    name: 'OOP21-Chess',
+    owner: 'AndreaZavatta',
+    repoUrl: 'https://github.com/AndreaZavatta/OOP21-Chess',
+    description: 'A modular Object-Oriented software reproducing the game of chess, featuring strict rule engines, graphical board presentation, and extensible OOP patterns.',
+    language: 'Java',
+    stars: 2,
+    forks: 2,
+    tags: ['Java', 'OOP', 'Desktop GUI', 'Software Architecture'],
+    featured: true,
+  },
+  {
+    id: 'PlagueSim/pps-24-psim',
+    name: 'PlagueSim',
+    owner: 'PlagueSim',
+    repoUrl: 'https://github.com/PlagueSim/pps-24-psim',
+    demoUrl: 'https://plaguesim.github.io/pps-24-psim/',
+    description: 'Simulation strategy game inspired by Plague Inc., modeling disease transmission dynamics across interconnected global regions with functional and OOP paradigms in Scala.',
+    language: 'Scala',
+    stars: 0,
+    forks: 1,
+    tags: ['Scala', 'Functional Programming', 'Simulation Engine', 'Domain Modeling'],
+    featured: true,
+  },
+];
