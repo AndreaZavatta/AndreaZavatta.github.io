@@ -14,23 +14,20 @@ export const Hero: React.FC = () => {
           
           {/* Main Info */}
           <div className="space-y-6 max-w-2xl">
-            {/* Title & Tagline */}
+            {/* Title */}
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white">
                 Andrea Zavatta
               </h1>
-              <p className="mt-3 text-lg sm:text-xl text-zinc-700 dark:text-zinc-300 font-medium leading-relaxed">
-                Software Engineer passionate about backend systems, distributed architectures, and large-scale computing.
-              </p>
             </div>
 
             {/* Narrative */}
-            <div className="space-y-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              <p>
-                I specialize in backend engineering, primarily working with <span className="text-zinc-900 dark:text-zinc-200 font-medium">Java</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Scala</span>. At university, I dive deep into distributed systems, exploring how to scale backend architectures capable of handling massive workloads and millions of concurrent users, blending both <span className="text-zinc-900 dark:text-zinc-200 font-medium">Object-Oriented</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Functional programming</span> paradigms.
+            <div className="space-y-4 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              <p className="text-base sm:text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                Hi 👋, I'm a Software Engineer from Italy striving to build impactful projects that I can genuinely be proud of—often connecting software engineering with my personal passions, such as sports and hobbies like chess.
               </p>
               <p>
-                I strive to build impactful projects that I can genuinely be proud of—often bridging software engineering with my personal passions, such as sports and hobbies like chess.
+                My greatest technical strengths lie in <span className="text-zinc-900 dark:text-zinc-200 font-medium">Java</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Scala</span>, honed throughout my university path and software projects. I enjoy designing clean, robust software across both <span className="text-zinc-900 dark:text-zinc-200 font-medium">Object-Oriented</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Functional programming</span> paradigms, with a strong interest in understanding distributed systems and how large-scale architectures scale.
               </p>
             </div>
 
