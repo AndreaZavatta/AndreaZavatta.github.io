@@ -26,24 +26,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const languageColor = LANGUAGE_COLORS[project.language] || 'bg-zinc-400';
 
   return (
-    <article className="group relative flex flex-col justify-between p-6 rounded-2xl bg-zinc-900/70 border border-zinc-800/80 hover:border-zinc-700/80 hover:bg-zinc-900 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-black/40">
+    <a
+      href={project.repoUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={`View ${project.name} on GitHub`}
+      className="group relative flex flex-col justify-between p-6 rounded-2xl bg-zinc-900/70 border border-zinc-800/80 hover:border-zinc-600/80 hover:bg-zinc-900/90 hover:scale-[1.025] hover:-translate-y-1 active:scale-[0.99] transition-all duration-300 ease-out shadow-sm hover:shadow-2xl hover:shadow-black/60 cursor-pointer block text-left"
+    >
       <div>
         {/* Card Header: Icon, Name, Stats */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-zinc-800/70 border border-zinc-700/50 text-zinc-300 group-hover:text-emerald-400 transition-colors">
+            <div className="p-2 rounded-lg bg-zinc-800/70 border border-zinc-700/50 text-zinc-300 group-hover:text-emerald-400 group-hover:border-emerald-500/40 transition-colors">
               <FolderGit2 className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-semibold text-zinc-100 text-lg group-hover:text-white tracking-tight flex items-center gap-2">
-                <a
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline focus:outline-none"
-                >
-                  {project.name}
-                </a>
+              <h3 className="font-semibold text-zinc-100 text-lg group-hover:text-white group-hover:underline decoration-zinc-500 underline-offset-4 tracking-tight flex items-center gap-2 transition-colors">
+                {project.name}
               </h3>
               {project.owner && (
                 <span className="text-xs text-zinc-500 font-mono">
@@ -67,7 +66,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
 
         {/* Description */}
-        <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3 mb-5 mt-2">
+        <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3 mb-5 mt-2 group-hover:text-zinc-300 transition-colors">
           {project.description}
         </p>
       </div>
@@ -79,7 +78,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.slice(0, 5).map((tag) => (
             <span
               key={tag}
-              className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40"
+              className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40 group-hover:border-zinc-600 transition-colors"
             >
               {tag}
             </span>
@@ -102,28 +101,34 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {/* External Links */}
           <div className="flex items-center gap-3">
             {project.demoUrl && (
-              <a
-                href={project.demoUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+              <span
+                role="button"
+                tabIndex={0}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open(project.demoUrl, '_blank', 'noreferrer');
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.open(project.demoUrl, '_blank', 'noreferrer');
+                  }
+                }}
+                className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-medium transition-colors cursor-pointer z-10"
               >
                 <span>Live Demo</span>
                 <ExternalLink className="w-3 h-3" />
-              </a>
+              </span>
             )}
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-1 text-zinc-300 hover:text-white font-medium transition-colors"
-            >
+            <div className="flex items-center gap-1 text-zinc-400 group-hover:text-white font-medium transition-colors">
               <GitHubIcon className="w-3.5 h-3.5" />
-              <span>Source</span>
-            </a>
+              <span>GitHub</span>
+            </div>
           </div>
         </div>
       </div>
-    </article>
+    </a>
   );
 };
