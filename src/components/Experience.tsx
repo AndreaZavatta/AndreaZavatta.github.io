@@ -4,26 +4,28 @@ import { Briefcase, GraduationCap, Calendar, ArrowUpRight } from 'lucide-react';
 export const Experience: React.FC = () => {
   const experiences = [
     {
-      period: '2023 — Present',
-      role: 'Software Engineer / Open Source Contributor',
-      company: 'Distributed Systems & Web Technologies',
+      period: 'January 2024 — September 2025',
+      role: 'Digital Customer Platform Application Analyst (Salesforce Developer)',
+      company: 'Technogym',
       description: [
-        'Architected real-time multiplayer systems using WebSocket protocol, Redis Pub/Sub, and Node.js.',
-        'Designed scalable microservice deployments with Docker Compose and Traefik reverse proxy load balancing.',
-        'Implemented type-safe frontend clients with Vue 3, React, TypeScript, and modern component systems.',
+        'Worked as a Salesforce Developer & Application Analyst, mastering platform architecture from both development and administration perspectives.',
+        'Engineered custom solutions and interactive interfaces using Apex, SOQL, Lightning Web Components (LWC), and Visualforce pages.',
+        'Optimized code, database queries, and transaction processing to strictly adhere to Salesforce governor limits and multi-tenant performance standards.',
+        'Transformed complex business requirements into modular, testable, and maintainable code engineered for future scalability and evolving needs.',
+        'Ensured software quality with comprehensive automated unit testing, CI/CD deployment pipelines, and agile sprint collaboration via Jira.',
       ],
-      skills: ['TypeScript', 'Node.js', 'Redis', 'Docker', 'WebSockets', 'MongoDB'],
-    },
-    {
-      period: '2021 — 2023',
-      role: 'Software Engineering Projects',
-      company: 'Object-Oriented & Systems Engineering',
-      description: [
-        'Developed end-to-end Object-Oriented software architectures including game engines and event-driven desktop systems in Java.',
-        'Implemented UDP client-server file transfer protocols, network socket programming, and database-driven management applications.',
-        'Built embedded IoT and Arduino automation systems with C++ and hardware pattern recognition.',
+      skills: [
+        'Salesforce',
+        'Apex',
+        'LWC',
+        'SOQL',
+        'Visualforce',
+        'Governor Limits',
+        'Unit Testing',
+        'CI/CD',
+        'Jira',
+        'Salesforce Admin',
       ],
-      skills: ['Java', 'C++', 'OOP Design Patterns', 'Networking Protocols', 'SQL'],
     },
   ];
 
@@ -49,7 +51,7 @@ export const Experience: React.FC = () => {
             Experience &amp; Education
           </h2>
           <p className="text-zinc-400 text-sm mt-1">
-            Summary of engineering roles, software projects, and academic background.
+            Summary of professional experience and academic background.
           </p>
         </div>
 
@@ -58,7 +60,7 @@ export const Experience: React.FC = () => {
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center gap-2 text-sm font-semibold text-zinc-200">
               <Briefcase className="w-4 h-4 text-emerald-400" />
-              <span>Engineering Journey</span>
+              <span>Work Experience</span>
             </div>
 
             <div className="relative pl-6 border-l border-zinc-800 space-y-8">
